@@ -1,45 +1,41 @@
 import React from 'react'
 import {ReactComponent as PgComplete} from '../../../icons/pg-complete.svg'  // import SVG files
-
+import styles from './StepProgress.module.scss'
 
 
 export function StepProgress () {
   return (
     <>
-      <section class="register-container col col-lg-6 col-sm-12" data-phase="1" data-total-price="0">
+      <section className={styles.registerContainer} data-phase="1" data-total-price="0">
+        <h2 className={styles.registerTitle}>結帳</h2>
 
-        <h2 class="register-title col col-12">結帳</h2>
-
-        <section class="progress-container col col-12">
-          <span class="progress-group" data-phase="address">
-            <span class="progress-icon">
-              <span class="text">1</span>
-              <svg class="icon cursor-point">
-
-              </svg>
+        <section className={styles.progressContainer}>
+          <span className={styles.progressGroup} data-phase="address">
+            <span className={styles.iconContainer}>
+              <span className={styles.text}>1</span>
+              <PgComplete className={styles.icon} />
             </span>
-            <span class="progress-label">寄送地址</span>
+            <span className={styles.progressLabel}>寄送地址</span>
           </span>
-          <span class="progress-bar" data-order="1"></span>
-          <span class="progress-group" data-phase="shipping">
-            <span class="progress-icon">
-              <span class="text">2</span>
-              <svg class="icon cursor-point">
+          <span className={styles.progressBar} data-order="1"></span>
 
-              </svg>
+          <span className={styles.progressGroup} data-phase="shipping">
+            <span className={styles.iconContainer}>
+              <span className={styles.textDone}>2</span>
+              <PgComplete className={styles.iconUndone} />
             </span>
-            <span class="progress-label">運送方式</span>
+            <span className={styles.progressLabelUndone}>運送方式</span>
           </span>
-          <span class="progress-bar" data-order="2"></span>
-          <span class="progress-group" data-phase="credit-card">
-            <span class="progress-icon">
-              <span class="text">3</span>
-              <svg class="icon cursor-point">
+          <span className={styles.progressBarUndone} data-order="2"></span>
 
-              </svg>
+          <span class={styles.progressGroup} data-phase="credit-card">
+            <span className={styles.iconContainer}>
+              <span className={styles.textDone}>3</span>
+              <PgComplete className={styles.iconUndone} />
             </span>
-            <span class="progress-label">付款資訊</span>
+            <span className={styles.progressLabelUndone}>付款資訊</span>
           </span>
+
         </section>
       </section>
     </>
