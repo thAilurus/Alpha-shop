@@ -31,9 +31,9 @@
         height: 24px;
         margin-right: 8px;
         border-radius: 50%;
-        background-color: #afb1bd
+        background-color: #afb1bd;
 
-        .text {
+        .textDone {
           display: none;
           position: absolute;
           top: 0px;
@@ -43,7 +43,7 @@
           color: white;
         }
         /*textDone*/
-        .textDone {
+        .textUndone {
           display: inline-block;
           color: #afb1bd;
         }
@@ -77,12 +77,17 @@
       width: 60px;
       height: 1px;
       margin: 0px 8px;
-      border: 2px solid black;
-      background-color: black;
+      border: 1.5px solid black;
+      background-color: white;
     }
     /*progressBarUndone*/
     .progressBarUndone {
-      composes: progressBar;
+      display: flex;
+      flex-grow: 1;
+      width: 60px;
+      height: 1px;
+      margin: 0px 8px;
+      border: 1.5px solid white;
       color: white;
     }
   }

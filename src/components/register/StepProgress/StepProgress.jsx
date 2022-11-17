@@ -12,7 +12,7 @@ export function StepProgress () {
         <section className={styles.progressContainer}>
           <span className={styles.progressGroup} data-phase="address">
             <span className={styles.iconContainer}>
-              <span className={styles.text}>1</span>
+              <span className={styles.textDone}>1</span>
               <PgComplete className={styles.icon} />
             </span>
             <span className={styles.progressLabel}>寄送地址</span>
@@ -21,7 +21,7 @@ export function StepProgress () {
 
           <span className={styles.progressGroup} data-phase="shipping">
             <span className={styles.iconContainer}>
-              <span className={styles.textDone}>2</span>
+              <span className={styles.textUndone}>2</span>
               <PgComplete className={styles.iconUndone} />
             </span>
             <span className={styles.progressLabelUndone}>運送方式</span>
@@ -30,7 +30,7 @@ export function StepProgress () {
 
           <span class={styles.progressGroup} data-phase="credit-card">
             <span className={styles.iconContainer}>
-              <span className={styles.textDone}>3</span>
+              <span className={styles.textUndone}>3</span>
               <PgComplete className={styles.iconUndone} />
             </span>
             <span className={styles.progressLabelUndone}>付款資訊</span>
