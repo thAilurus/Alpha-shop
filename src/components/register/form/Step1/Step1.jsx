@@ -4,13 +4,15 @@ import styles from './Step1.module.scss'
 export function Step1 () {
   return (
     <>
-      <form class="col col-12" data-phase="address">
-        <h3 class="form-title">寄送地址</h3>
-        <section class="form-body col col-12">
+      <form className={styles.step1Address} data-phase="address">
+        <h3 className={styles.title}>寄送地址</h3>
+        <section className={styles.formBody}>
+          {/*使用display: grid劃分*/}
           <div class="col col-12">
-            <div class="input-group input-w-lg-2 input-w-sm-s1">
-              <div class="input-label">稱謂</div>
-              <div class="select-container">
+
+            <div className={styles.inputGroup}>
+              <div className={styles.inputLabel}>稱謂</div>
+              <div className={styles.selectContainer}>
                 <select>
                   <option value="mr" selected>先生</option>
                   <option value="ms">女士</option>
