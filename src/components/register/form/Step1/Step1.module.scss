@@ -27,6 +27,7 @@
       .selectContainer {
         position: relative;
 
+        /*觀摩一下別人的再改看看*/
         &::after {
           position: absolute;
           top: 50%;
@@ -41,5 +42,23 @@
         }
       }
     }
+  }
+
+  /*grid劃分*/
+  .grid1,
+  .grid3 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+  }
+
+  .grid2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
   }
 }
