@@ -33,7 +33,7 @@ export function Step1 () {
               <input type="tel" placeholder="請輸入行動電話" />
             </div>
             <div className={styles.inputGroup}>
-              <div cclassName={styles.inputLabel}>Email</div>
+              <div className={styles.inputLabel}>Email</div>
               <input type="email" placeholder="請輸入電子郵件" />
             </div>
           </div>
@@ -78,7 +78,7 @@ export function Step1 () {
               </div>
             </div>
             <div className={styles.inputGroup}>
-              <div cclassName={styles.inputLabel}>地址</div>
+              <div className={styles.inputLabel}>地址</div>
               <input type="text" placeholder="請輸入地址" />
             </div>
           </div>

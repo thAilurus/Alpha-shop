@@ -1,4 +1,5 @@
 .step1Address {
+  width: 50%;
   display: flex;
   flex-direction: column;
 
@@ -27,7 +28,6 @@
       .selectContainer {
         position: relative;
 
-        /*觀摩一下別人的再改看看*/
         &::after {
           position: absolute;
           top: 50%;
@@ -39,6 +39,7 @@
           border-width: 6px 5px 0 5px;
           border-color: var(--select-arrow) transparent transparent transparent;
           content: "";
+
         }
       }
     }
