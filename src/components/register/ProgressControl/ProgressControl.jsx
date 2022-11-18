@@ -2,23 +2,21 @@ import React from 'react'
 import styles from './ProgressControl.module.scss'
 
 // import SVG files
-import { ReactComponent as RightArrow } from '../../../icons/right-arrow.svg' 
-import { ReactComponent as LeftArrow } from '../../../icons/left-arrow.svg' 
+import { ReactComponent as RightArrow } from '../../../icons/right-arrow.svg'
+// import { ReactComponent as LeftArrow } from '../../../icons/left-arrow.svg'
 
 
 
-export function ProgressControl () {
+export function ProgressControl() {
   return (
     <>
-    {/* 只先刻出第一步畫面: 只有下一步按鈕 */}
+      {/* 只先刻出第一步畫面: 只有下一步按鈕 */}
       <section className={styles.progressControlContainer}>
 
         <section className={styles.buttonGroup} data-phase="address">
           <button className={styles.next}>
             下一步
-            <svg class="cursor-point">
-              <RightArrow className={styles.cursorPoint}/>
-            </svg>
+            <RightArrow className={styles.cursorPoint} />
           </button>
         </section>
 

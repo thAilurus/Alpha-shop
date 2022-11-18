@@ -1,13 +1,14 @@
 .progressControlContainer {
-  position: absolute;
-  bottom: 33.5%;
-  width: 50%;
-  padding-top: 10px;
-  border-top: 1px solid #c9c9c9;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 100%;
+  align-content: flex-start;
+  max-width: 100%;;
 
   .buttonGroup {
     display: flex;
     margin-top: 20px;
+    border-top: 1px solid #e6e6e8;;
 
     .next {
       display: flex;
@@ -20,7 +21,7 @@
       line-height: 17px;
       border: 0px solid;
       border-radius: 1em;
-      background: var(--pink);
+      background: #F67599;
       color: #ffffff;
       margin-left: auto;
     }
