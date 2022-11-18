@@ -1,0 +1,71 @@
+.step2Shipping {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 100%;
+  align-content: flex-start;
+  max-width: 100%;
+
+  .title {
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .formBody {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .radioGroup {
+      display: flex;
+      position: relative;
+      width: 100%;
+      justify-content: center;
+      padding: 11px 20px;
+      margin-top: 24px;
+      cursor: pointer;
+
+      .shippingStandard {
+        width: 10%;
+        height: 50%;
+      }
+
+      .radioInfo {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+      }
+    }
+
+    .radioBoxBorder {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.col12 {
+  .shippingText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
+  .shippingPrice {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 16px;
+  }
+}
+
+.shippingPeriod {
+  font-size: 12px;
+  line-height: 16px;
+}
