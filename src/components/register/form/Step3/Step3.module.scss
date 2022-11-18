@@ -1,0 +1,44 @@
+.step3Credit {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 100%;
+  align-content: flex-start;
+  max-width: 100%;
+  .title {
+    /* composes: title from '../Step1/Step1.module.scss*/
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .formBody {
+    /* composes: formBody from '../Step1/Step1.module.scss' */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .col12 {
+      /* composes: col12 from '../Step2/Step2.module.scss' */
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 0 100%;
+      align-items: flex-start;
+      max-width: 100%;
+
+      .inputGroup {
+        /* composes: inputGroup from '../Step1/Step1.module.scss' */
+        margin-top: 24px;
+
+        .inputLabel {
+          /*/composes: inputLabel from '../Step1/Step1.module.scss' */
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 16px;
+          color: #808080;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
