@@ -5,7 +5,7 @@ import styles from './Step2.module.scss'
 export function Step2 () {
   return (
     <>
-      <form className={styles.step2Shipping} data-phase="shipping">
+      <form className={styles.step2Shipping} style={{ display: 'none' }} data-phase="shipping">
         <h3 className={styles.title}>運送方式</h3>
 
         <section className={styles.formBody}>

@@ -4,9 +4,9 @@ import styles from './Step3.module.scss'
 export function Step3 () {
   return (
     <>
-      <form className={styles.step3Credit} data-phase="credit-card">
-        <h3 className={styles.title}>付款資訊</h3>
-        
+      <form className={styles.step3Credit} style={{display: 'none'}} data-phase="credit-card">
+
+        <h3 className={styles.title}>付款資訊</h3> 
         <section className={styles.formBody}>
 
           <div className={styles.col12}>
@@ -36,6 +36,7 @@ export function Step3 () {
           </div>
 
         </section>
+
       </form>
     </>
   )
