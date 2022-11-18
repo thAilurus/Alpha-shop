@@ -10,43 +10,46 @@ import { ReactComponent as LeftArrow } from '../../../icons/left-arrow.svg'
 export function ProgressControl () {
   return (
     <>
-      <section class="progress-control-container col col-lg-6 col-sm-12">
+    {/* 只先刻出第一步畫面: 只有下一步按鈕 */}
+      <section className={styles.progressControlContainer}>
 
-        <section class="button-group col col-12" data-phase="address">
-          <button class="next">
+        <section className={styles.buttonGroup} data-phase="address">
+          <button className={styles.next}>
             下一步
             <svg class="cursor-point">
-              {/*<use xlink:href="#svg-icon-right-arrow"></use>*/}
+              <RightArrow className={styles.cursorPoint}/>
             </svg>
           </button>
         </section>
 
+        {/*
         <section class="button-group col col-12" data-phase="shipping">
           <button class="prev">
             <svg class="cursor-point">
-              {/*<use xlink:href="#svg-icon-left-arrow"></use>*/}
+              
             </svg>
             上一步
           </button>
           <button class="next">
             下一步
             <svg class="cursor-point">
-              {/*<use xlink:href="#svg-icon-right-arrow"></use>*/}
+              
             </svg>
           </button>
-        </section>
+        </section> */}
 
+        {/*
         <section class="button-group col col-12" data-phase="credit-card">
           <button class="prev">
             <svg class="cursor-point">
-              {/*<use xlink:href="#svg-icon-left-arrow"></use>*/}
+             
             </svg>
             上一步
           </button>
           <button class="next">
             確認下單
           </button>
-        </section>
+      </section> */}
 
       </section>
     </>

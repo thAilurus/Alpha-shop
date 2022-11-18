@@ -1,0 +1,43 @@
+.progressControlContainer {
+  position: absolute;
+  bottom: 33.5%;
+  width: 50%;
+  padding-top: 10px;
+  border-top: 1px solid #c9c9c9;
+
+  .buttonGroup {
+    display: flex;
+    margin-top: 20px;
+
+    .next {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 174px;
+      height: 46px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      border: 0px solid;
+      border-radius: 1em;
+      background: var(--pink);
+      color: #ffffff;
+      margin-left: auto;
+    }
+    .prev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0px solid;
+      border-radius: 1em;
+      background-color: transparent;
+      line-height: 20px;
+      font-weight: 400;
+      color: #000000;
+    }
+  }
+}
+
+.cursorPoint {
+  cursor: pointer;
+}
