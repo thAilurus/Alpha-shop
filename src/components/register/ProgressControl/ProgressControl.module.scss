@@ -3,14 +3,19 @@
   flex-flow: column wrap;
   flex: 0 0 100%;
   align-content: flex-start;
-  max-width: 100%;;
+  max-width: 100%;
 
   .buttonGroup {
-    display: flex;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 20px;
     border-top: 1px solid #e6e6e8;;
 
-    .next {
+    .next,
+    .ordered {
+      grid-column: 3/4;
+      grid-row: 1/1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -24,8 +29,11 @@
       background: #F67599;
       color: #ffffff;
       margin-left: auto;
+      cursor: pointer;
     }
     .prev {
+      grid-column: 1/2;
+      grid-row: 1/1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -35,10 +43,25 @@
       line-height: 20px;
       font-weight: 400;
       color: #000000;
+      cursor: pointer;
+      visibility: hidden;
+    }
+    .ordered {
+      display: none;
     }
   }
 }
 
-.cursorPoint {
-  cursor: pointer;
+.rightArrow,
+.leftArrow {
+  width: 24px;
+  height: 24px;
+}
+
+.rightArrow {
+  margin-left: 12px;
+}
+
+.leftArrow {
+  margin-right: 12px;
 }
