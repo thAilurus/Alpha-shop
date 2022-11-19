@@ -1,4 +1,10 @@
 import React from 'react'
+import {ReactComponent as Toggle} from '../icons/toggle.svg'
+import { ReactComponent as Search } from '../icons/search.svg'
+import { ReactComponent as Cart } from '../icons/cart.svg'
+import { ReactComponent as Moon } from '../icons/moon.svg'
+import { ReactComponent as Sun } from '../icons/sun.svg'
+import { ReactComponent as Logo } from '../icons/logo.svg'
 
 
 export function Header () {
@@ -10,7 +16,7 @@ export function Header () {
           <input id="navbar-toggle" class="navbar-toggle" type="checkbox" />
           <label for="navbar-toggle" class="burger-container">
             <svg class="icon-toggle cursor-point">
-              <use xlink:href="#svg-icon-toggle"></use>
+              {/*<use xlink:href="#svg-icon-toggle"></use>*/}
             </svg>
           </label>
           
@@ -36,22 +42,22 @@ export function Header () {
 
               <li class="nav-item">
                 <svg class="nav-icon cursor-point">
-                  <use xlink:href="#svg-icon-search"></use>
+                  {/*<use xlink:href="#svg-icon-search"></use>*/}
                 </svg>
               </li>
 
               <li class="nav-item">
                 <svg class="nav-icon cursor-point">
-                  <use xlink:href="#svg-icon-cart"></use>
+                  {/*<use xlink:href="#svg-icon-cart"></use>*/}
                 </svg>
               </li>
               <li id="theme-toggle" class="nav-item">
 
                 <svg class="nav-icon cursor-point">
-                  <use xlink:href="#svg-icon-moon"></use>
+                  {/*<use xlink:href="#svg-icon-moon"></use>*/}
                 </svg>
                 <svg class="nav-icon cursor-point">
-                  <use xlink:href="#svg-icon-sun"></use>
+                  {/*<use xlink:href="#svg-icon-sun"></use>*/}
                 </svg>
               </li>
             </ul>
@@ -59,7 +65,7 @@ export function Header () {
 
           <a class="header-logo-container" href="#">
             <svg class="icon-logo cursor-point">
-              <use xlink:href="#svg-icon-logo"></use>
+             {/*} <use xlink:href="#svg-icon-logo"></use>*/}
             </svg>
           </a>
         </div>
