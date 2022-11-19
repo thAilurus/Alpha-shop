@@ -6,9 +6,6 @@ import styles from './StepProgress.module.scss'
 export function StepProgress () {
   return (
     <>
-      <section className={styles.registerContainer} data-phase="1" data-total-price="0">
-        <h2 className={styles.registerTitle}>結帳</h2>
-
         <section className={styles.progressContainer}>
           <span className={styles.progressGroup} data-phase="address">
             <span className={styles.iconContainer}>
@@ -37,7 +34,6 @@ export function StepProgress () {
           </span>
 
         </section>
-      </section>
     </>
   )
 }

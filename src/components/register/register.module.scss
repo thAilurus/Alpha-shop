@@ -1,0 +1,13 @@
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  align-items: flex-start;
+  max-width: 100%;
+  margin-left: 2rem;
+
+  .registerTitle {
+
+  }
+}
