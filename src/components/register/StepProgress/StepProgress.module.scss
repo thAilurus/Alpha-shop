@@ -5,34 +5,31 @@
   margin-top: 48px;
 
   .progressGroup {
+    display: flex;
     flex-flow: row;
+    align-items: center;
     font: inherit;
     margin-right: 1px;
-    padding: 0;
-    border: 0;
+ 
 
-    .iconContainer {
+    .iconContainerDone {
       display: inline-block;
       position: relative;
       width: 24px;
       height: 24px;
       margin-right: 8px;
       border-radius: 50%;
-      background-color: #afb1bd;
+      background-color: black;
 
       .textDone {
-        display: none;
+        display: flex;
         position: absolute;
         top: 0px;
+        left: 8px;
         font-size: 12px;
         line-height: 24px;
         text-align: center;
         color: white;
-      }
-      /*textDone*/
-      .textUndone {
-        display: inline-block;
-        color: #afb1bd;
       }
 
       .icon {
@@ -56,6 +53,29 @@
     .progressLabelUndone {
       color: #afb1bd;
     }
+
+    .iconContainerUndone {
+      display:inline-block;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      border-radius: 50%;
+      border: 1px solid #afb1bd;
+
+      .textUndone {
+        display: none;
+        /*
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 8px;
+        
+        color: #afb1bd; */
+      }
+    }
   }
 
   .progressBar {
@@ -65,7 +85,7 @@
     height: 1px;
     margin: 0px 8px;
     border: 1.5px solid black;
-    background-color: white;
+    background-color: black;
   }
   /*progressBarUndone*/
   .progressBarUndone {
@@ -74,7 +94,7 @@
     width: 60px;
     height: 1px;
     margin: 0px 8px;
-    border: 1.5px solid white;
-    color: white;
+    border: 1.5px solid #f0f0f5;
+    background-color: #f0f0f5;
   }
 }
