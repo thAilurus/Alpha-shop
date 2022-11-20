@@ -13,7 +13,7 @@ export function Step1 () {
             <div className={styles.inputGroup}>
               <div className={styles.inputLabel}>稱謂</div>
               <div className={styles.selectContainer}>
-                <select>
+                <select className={styles.inputs}>
                   <option value="mr" selected>先生</option>
                   <option value="ms">女士</option>
                   <option value="mx">不明</option>
@@ -22,7 +22,8 @@ export function Step1 () {
             </div>
             <div className={styles.inputGroup}>
               <div className={styles.inputLabel}>姓名</div>
-              <input type="text" placeholder="請輸入姓名" />
+              <input className={styles.inputs}
+              type="text" placeholder="請輸入姓名" />
             </div>
           </div>
 
@@ -30,11 +31,13 @@ export function Step1 () {
           <div className={styles.grid2}>
             <div className={styles.inputGroup}>
               <div className={styles.inputLabel}>電話</div>
-              <input type="tel" placeholder="請輸入行動電話" />
+              <input className={styles.inputs}
+              type="tel" placeholder="請輸入行動電話" />
             </div>
             <div className={styles.inputGroup}>
               <div className={styles.inputLabel}>Email</div>
-              <input type="email" placeholder="請輸入電子郵件" />
+              <input className={styles.inputs}
+              type="email" placeholder="請輸入電子郵件" />
             </div>
           </div>
 
@@ -43,7 +46,8 @@ export function Step1 () {
             <div className={styles.inputGroup}>
               <div className={styles.inputLabel}>縣市</div>
               <div className={styles.selectContainer}>
-                <select required>
+                <select className={styles.inputs}
+                 required>
                   <option value="">請選擇縣市</option>
                   <option value="KLU">基隆市</option>
                   <option value="TPH">新北市</option>
@@ -79,7 +83,8 @@ export function Step1 () {
             </div>
             <div className={styles.inputGroup}>
               <div className={styles.inputLabel}>地址</div>
-              <input type="text" placeholder="請輸入地址" />
+              <input className={styles.inputs}
+              type="text" placeholder="請輸入地址" />
             </div>
           </div>
         </section>
