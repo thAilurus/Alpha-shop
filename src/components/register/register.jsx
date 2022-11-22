@@ -11,9 +11,9 @@ export function Register() {
         <h2 className={styles.registerTitle}>結帳</h2>
         <StepProgress />
         <Form />
-
+        <ProgressControl />
       </section>
-      <ProgressControl />
+
       
     </>
   )
