@@ -1,5 +1,6 @@
 import React from 'react'
 import { Register } from './register/register'
+import { ProgressControl } from './ProgressControl/ProgressControl'
 import styles from './main.module.scss'
 
 export function Main () {
@@ -8,6 +9,7 @@ export function Main () {
     <div className={styles.mainContainer}> 
       <Register/>
       {/*<Cart/>*/}
+      <ProgressControl />
     </div>
   )
 }
