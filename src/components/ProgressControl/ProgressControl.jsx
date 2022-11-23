@@ -2,8 +2,8 @@ import React from 'react'
 import styles from './ProgressControl.module.scss'
 
 // import SVG files
-import { ReactComponent as RightArrow } from '../../../icons/right-arrow.svg'
-import { ReactComponent as LeftArrow } from '../../../icons/left-arrow.svg'
+import { ReactComponent as RightArrow } from '../../icons/right-arrow.svg'
+import { ReactComponent as LeftArrow } from '../../icons/left-arrow.svg'
 
 
 
