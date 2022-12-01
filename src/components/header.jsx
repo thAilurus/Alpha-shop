@@ -17,9 +17,7 @@ export function Header () {
           {/*<!-- navbar-toggle -->*/}
           <input id="navbar-toggle" class="navbar-toggle" type="checkbox" />
           <label for="navbar-toggle" class="burger-container">
-            <svg class="icon-toggle cursor-point">
-              <use xlink:href="#svg-icon-toggle"></use>
-            </svg>
+            <Toggle/>
           </label>
 
           {/* <!-- navbar-menu -->*/}
@@ -44,34 +42,24 @@ export function Header () {
             <ul class="nav-list site-action-list">
               {/*<!-- search -->*/}
               <li class="nav-item">
-                <svg class="nav-icon cursor-point">
-                  <use xlink:href="#svg-icon-search"></use>
-                </svg>
+                <Search/>
               </li>
               {/*<!-- cart -->*/}
               <li class="nav-item">
-                <svg class="nav-icon cursor-point">
-                  <use xlink:href="#svg-icon-cart"></use>
-                </svg>
+                <Cart/>
               </li>
               <li id="theme-toggle" class="nav-item">
                 {/* <!-- moon --> */}
-                <svg class="nav-icon cursor-point">
-                  <use xlink:href="#svg-icon-moon"></use>
-                </svg>
+                <Moon/>
                 {/*<!-- sun -->*/}
-                <svg class="nav-icon cursor-point">
-                  <use xlink:href="#svg-icon-sun"></use>
-                </svg>
+                <Sun/>
               </li>
             </ul>
           </nav>
 
           {/*<!-- logo -->*/}
           <a class="header-logo-container" href="#">
-            <svg class="icon-logo cursor-point">
-              <use xlink:href="#svg-icon-logo"></use>
-            </svg>
+            <Logo/>
           </a>
         </div>
       </header>
