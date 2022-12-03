@@ -15,44 +15,47 @@ export function Cart() {
 
         <section className={styles.productList} data-total-price="0">
           <div className={styles.productContainer} data-count="0" data-price="3999">
-            <img className={styles.imgContainer} alt='product1'  src="./public/images/product-1.jpg" />
+            <img className={styles.imgContainer} alt='product1' src="./src/images/product-1.jpg" />
             <div className={styles.productInfo}>
               <div className={styles.productName}>破壞補丁修身牛仔褲</div>
               <div className={styles.productControlContainer}>
                 <div className={styles.productControl}>
                   <Minus className={styles.minus} />
-                  <span className={styles.productCount}></span>
+                  <span className={styles.productCount}>0</span>
                   <Plus className={styles.plus} />
                 </div>
               </div>
-              <div className={styles.price}></div>
+              <div className={styles.price}>$3999</div>
             </div>
           </div>
-          <div class="product-container col col-12" data-count="0" data-price="1299">
-            <img class="img-container" alt='product2' src="./public/images/product-2.jpg" />
-            <div class="product-info">
-              <div class="product-name">刷色直筒牛仔褲</div>
-              <div class="product-control-container">
-                <div class="product-control">
-                  <Minus />
-                  <span class="product-count"></span>
-                  <Plus />
+          <div className={styles.productContainer} data-count="0" data-price="1299">
+            <img ClassName={styles.imgContainer} alt='product2' src="./src/images/product-2.jpg" />
+            <div className={styles.productInfo}>
+              <div className={styles.productName}>刷色直筒牛仔褲</div>
+              <div className={styles.productControlContainer}>
+                <div className={styles.productControl}>
+                  <Minus className={styles.minus} />
+                  <span className={styles.productCount}>0</span>
+                  <Plus className={styles.plus} />
                 </div>
               </div>
-              <div class="price"></div>
+              <div className={styles.price}>$1299</div>
 
             </div>
           </div>
         </section>
 
-        <section className={styles.cartShipping}>
-          <div className={styles.text}>運費</div>
-          <div className={styles.price}></div>
+        <section className={styles.cartInfo}>
+          <section className={styles.cartShipping}>
+            <div className={styles.text}>運費</div>
+            <div className={styles.price}>免運</div>
+          </section>
+          <section className={styles.cartTotal} >
+            <div className={styles.text}>小計</div>
+            <div className={styles.price}>$0</div>
+          </section>
         </section>
-        <section className={styles.cartTotal} >
-          <div className={styles.text}>小計</div>
-          <div className={styles.price}></div>
-        </section>
+
       </section>
 
     </>

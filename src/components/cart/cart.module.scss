@@ -9,58 +9,86 @@
   }
 
   .productList {
-
     .productContainer {
+      display: flex;
 
       .imgContainer {
-
       }
 
       .productInfo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        align-content: flex-start;
 
         .productName {
-
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          max-width: 60%;
+          margin-right: auto;
         }
         .productControlContainer {
+          display: block;
+          width: 100%;
+          order: 1;
 
           .productControl {
+            display: flex;
+            width: 116px;
+            margin: 18px 0;
+            justify-content: space-between;
+            align-items: center;
 
-            .minus {
-
+            .minus,
+            .plus {
+              display: inline-block;
+              width: 27px;
+              height: 26px;
+              cursor: pointer;
             }
 
             .productCount {
-
-            }
-            
-            .plus {
-
+              display: inline-block;
+              font-size: 16px;
             }
           }
         }
 
         .price {
-
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 700;
         }
       }
     }
   }
 
-  .cartShipping {
-    .text {
+  .cartInfo {
+    padding: 16px 0px 32px 0;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
 
-    }
-    .price {
+    .cartShipping,
+    .cartTotal {
+      display: flex;
+      justify-content: space-between;
 
+      .text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2a2a2a;
+        margin-bottom: 2rem;
+      }
+      .price {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+      }
     }
   }
 
-  .cartTotal {
-    .text {
-
-    }
-    .price {
-
-    }
-  }
 }
+
