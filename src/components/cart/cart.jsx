@@ -2,7 +2,7 @@ import React from 'react'
  
 // import svg files
 
-//import scss styles
+// import scss styles
 
 
 
