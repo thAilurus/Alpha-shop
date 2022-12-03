@@ -1,32 +1,55 @@
 .siteHeader {
+  position: sticky;
+  top: 0px;
+  padding: 0px 15px;
+  background-color: inherit;
+  text-align: center;
+  z-index: 100;
 
   .headerContainer {
+    display: flex;
+    position: relative;
+    max-width: 1100px;
+    height: 60px;
+    background-color: inherit;
+    align-items: stretch;
+    margin: 0 auto;
 
     .navbarToggle {
-
+      display: none;
     }
     .burgerContainer {
-
+      display: none;
     }
     .navbarMenu {
-
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       .navListMenu {
-        
-        .navItem {
+        grid-column: 1/2;
+        list-style: none;
+        display: flex;
+        column-gap: 5px;
 
+        .navItem {
+          flex-flow: row nowrap;
         }
 
       }
       .navListAction {
-        
-        .navItem {
+        grid-column: 3/4;
+        list-style: none;
+        display: flex;
 
+        .navItem {
+          flex-flow: row nowrap;
         }
       }
     }
     
     .logoContainer {
-
+      position: absolute;
+      top: 50%;
+      left: 50%;
     }
   }
 }

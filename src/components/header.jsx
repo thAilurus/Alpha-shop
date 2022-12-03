@@ -7,7 +7,7 @@ import { ReactComponent as Sun } from '../icons/sun.svg'
 import { ReactComponent as Logo } from '../icons/logo.svg'
 
 //import styles from './header.module.scss'
-import styles from './ header.module.scss'
+import styles from './header.module.scss'
 
 export function Header () {
   return (
@@ -62,7 +62,7 @@ export function Header () {
           <a className={styles.logoContainer} href="#">
             <Logo/>
           </a>
-          
+
         </div>
       </header>
     </>            
