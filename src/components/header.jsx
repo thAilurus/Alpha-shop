@@ -1,5 +1,5 @@
 import React from 'react'
-import {ReactComponent as Toggle} from '../icons/toggle.svg'
+import { ReactComponent as Toggle} from '../icons/toggle.svg'
 import { ReactComponent as Search } from '../icons/search.svg'
 import { ReactComponent as Cart } from '../icons/cart.svg'
 import { ReactComponent as Moon } from '../icons/moon.svg'
@@ -25,19 +25,19 @@ export function Header () {
           <nav className={styles.navbarMenu}>
             <ul className={styles.navListMenu}>
               <li className={styles.navItem}>
-                <a class="nav-link" href="#">男款</a>
+                <a className={styles.navLink} href="#">男款</a>
               </li>
               <li className={styles.navItem}>
-                <a class="nav-link" href="#">女款</a>
+                <a className={styles.navLink} href="#">女款</a>
               </li>
               <li className={styles.navItem}>
-                <a class="nav-link" href="#">最新消息</a>
+                <a className={styles.navLink} href="#">最新消息</a>
               </li>
               <li className={styles.navItem}>
-                <a class="nav-link" href="#">客製商品</a>
+                <a className={styles.navLink} href="#">客製商品</a>
               </li>
               <li className={styles.navItem}>
-                <a class="nav-link" href="#">聯絡我們</a>
+                <a className={styles.navLink} href="#">聯絡我們</a>
               </li>
             </ul>
             <ul className={styles.navListAction}>
