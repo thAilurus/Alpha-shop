@@ -60,7 +60,7 @@ export function Header () {
 
           {/*<!-- logo -->*/}
           <a className={styles.logoContainer} href="#">
-            <Logo/>
+            <Logo className={styles.logo} />
           </a>
 
         </div>
