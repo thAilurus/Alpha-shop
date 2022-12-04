@@ -1,9 +1,5 @@
 .progressControlContainer {
-  display: flex;
-  flex-flow: column wrap;
-  flex: 0 0 100%;
-  align-content: flex-start;
-  max-width: 100%;
+  width: 50%;
 
   .buttonGroup {
     
@@ -12,6 +8,7 @@
     margin-top: 20px;
     border-top: 1px solid #e6e6e8;;
     padding-top: 24px;
+
 
     .next,
     .ordered {
