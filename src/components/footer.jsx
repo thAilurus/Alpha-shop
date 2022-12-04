@@ -11,9 +11,7 @@ export function Footer() {
       <footer class="site-footer">
         <div class="footer-container">
           <div class="footer-logo-container">
-            <svg class="icon-logo">
-              <use xlink:href="#svg-icon-logo"></use>
-            </svg>
+            <Logo/>
           </div>
           <section class="footer-section">
             <h2 class="section-title">客戶服務</h2>
@@ -45,15 +43,9 @@ export function Footer() {
             <div class="section-content">
               <div class="tel-info">+886 02123-45678</div>
               <div class="social-icon-group">
-                <svg class="social-icon cursor-point">
-                  <use xlink:href="#svg-icon-facebook"></use>
-                </svg>
-                <svg class="social-icon cursor-point">
-                  <use xlink:href="#svg-icon-instagram"></use>
-                </svg>
-                <svg class="social-icon cursor-point">
-                  <use xlink:href="#svg-icon-whatsapp"></use>
-                </svg>
+                <FB/>
+                <IG/>
+                <Whatsapp/>
               </div>
             </div>
           </section>
