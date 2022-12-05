@@ -11,7 +11,6 @@ export function Register() {
         <StepProgress />
         <Form />
       </section>
-
       
     </>
   )
