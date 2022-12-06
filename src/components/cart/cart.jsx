@@ -5,8 +5,6 @@ import styles from './cart.module.scss'
 import { ReactComponent as Minus } from '../../icons/minus.svg'
 import { ReactComponent as Plus } from '../../icons/plus.svg'
 
-
-
 export function Cart() {
   return (
     <>
