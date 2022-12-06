@@ -9,8 +9,8 @@ export function Step1 () {
         <section className={styles.formBody}>
 
           {/*使用display: grid1劃分*/}
-          <div className={styles.grid1}>
-            <div className={styles.inputGroup}>
+          <div className={styles.bodyContent1}>
+            <div className={styles.inputGroup1}>
               <div className={styles.inputLabel}>稱謂</div>
               <div className={styles.selectContainer}>
                 <select className={styles.inputs}>
@@ -20,7 +20,7 @@ export function Step1 () {
                 </select>
               </div>
             </div>
-            <div className={styles.inputGroup}>
+            <div className={styles.inputGroup2}>
               <div className={styles.inputLabel}>姓名</div>
               <input className={styles.inputs}
               type="text" placeholder="請輸入姓名" />
@@ -28,7 +28,7 @@ export function Step1 () {
           </div>
 
           {/*使用display: grid劃分*/}
-          <div className={styles.grid2}>
+          <div className={styles.bodyContent2}>
             <div className={styles.inputGroup}>
               <div className={styles.inputLabel}>電話</div>
               <input className={styles.inputs}
@@ -42,8 +42,8 @@ export function Step1 () {
           </div>
 
           {/*使用display: grid劃分*/}
-          <div className={styles.grid3}>
-            <div className={styles.inputGroup}>
+          <div className={styles.bodyContent1}>
+            <div className={styles.inputGroup1}>
               <div className={styles.inputLabel}>縣市</div>
               <div className={styles.selectContainer}>
                 <select className={styles.inputs}
@@ -81,7 +81,7 @@ export function Step1 () {
                 </select>
               </div>
             </div>
-            <div className={styles.inputGroup}>
+            <div className={styles.inputGroup2}>
               <div className={styles.inputLabel}>地址</div>
               <input className={styles.inputs}
               type="text" placeholder="請輸入地址" />

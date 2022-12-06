@@ -1,7 +1,6 @@
 .step1Address {
   display: flex;
   flex-flow: column wrap;
-  
 
   .title {
     font-weight: 700;
@@ -12,58 +11,61 @@
 
   .formBody {
     display: flex;
-    max-width: 100%;
+    max-width: 94%;
     flex-flow: column wrap;
-    
-    .inputGroup {
-      margin-top: 24px;
 
-      .inputLabel {
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 16px;
-        color: #808080;
-        margin-bottom: 8px;
+    .bodyContent1,
+    .bodyContent2 {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
 
-      }
+      .inputGroup1,
+      .inputGroup2,
+      .inputGroup {
+        margin-top: 24px;
 
-      .selectContainer {
-        position: relative;
-        
-
-        &::after {
-          position: absolute;
-          top: 50%;
-          right: 12px;
-          transform: translateY(-50%);
-          z-index: -2;
-          pointer-events: none;
-          border-style: solid;
-          border-width: 6px 5px 0 5px;
-          border-color: #000000;
-          content: "";
+        .inputLabel {
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 16px;
+          color: #808080;
+          margin-bottom: 8px;
         }
+
+        .selectContainer {
+          position: relative;
+
+          &::after {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            transform: translateY(-50%);
+            z-index: -2;
+            pointer-events: none;
+            border-style: solid;
+            border-width: 6px 5px 0 5px;
+            border-color: #000000;
+            content: "";
+          }
+        }
+      }
+      .inputGroup1 {
+        width: 32%;
+      }
+      .inputGroup2 {
+        width: 64%;
+      }
+    }
+
+    .bodyContent2 {
+      .inputGroup {
+        width: 45%;
       }
     }
   }
 
-  /*grid劃分*/
-  .grid1,
-  .grid3 {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 20px;
-  }
-
-  .grid2 {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 20px;
-  }
+ 
 }
 
 .inputs {
