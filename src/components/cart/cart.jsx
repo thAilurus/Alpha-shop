@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Cart.module.scss'
-
-// import svg files
+import {cartList} from './CartData.jsx'
 import { ReactComponent as Minus } from '../../icons/minus.svg'
 import { ReactComponent as Plus } from '../../icons/plus.svg'
 
