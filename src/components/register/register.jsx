@@ -1,7 +1,7 @@
 import React from 'react'
 import { StepProgress } from './StepProgress/StepProgress'
 import { Form } from './form/Form'
-import styles from './register.module.scss'
+import styles from './Register.module.scss'
 
 export function Register() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import { Register } from './register/register'
+import { Register } from './register/Register'
 import { ProgressControl } from './ProgressControl/ProgressControl'
-import { Cart } from './cart/cart'
+import { Cart } from './cart/Cart'
 import styles from './main.module.scss'
 
 export function Main () {

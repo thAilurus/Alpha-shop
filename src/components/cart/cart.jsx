@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './cart.module.scss'
+import styles from './Cart.module.scss'
 
 // import svg files
 import { ReactComponent as Minus } from '../../icons/minus.svg'
