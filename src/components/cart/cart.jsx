@@ -17,7 +17,7 @@ function CartInfo({ name, text, price }) {
 
 
 export function Cart() {
-  const listItems = items.map((item) => {
+  const listItems = items.map((item) => (
 
       <div className={styles.productContainer} key={item.id}>
         <img className={styles.imgContainer} src={item.img} alt={item.name} />
@@ -33,7 +33,7 @@ export function Cart() {
           <div className={styles.price}>{item.price}</div>
         </div>
       </div>
-  })
+  ))
 
 return (
   <>

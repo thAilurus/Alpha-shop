@@ -11,6 +11,8 @@
   .productList {
     .productContainer {
       display: flex;
+      /*A4新增*/
+      margin-bottom: 2rem;
 
       .imgContainer {
         width: 100px;
@@ -68,14 +70,10 @@
   }
 
   .cartInfo {
-    padding: 16px 0px 32px 0;
-    align-items: center;
     border-top: 1px solid #f0f0f0;
-
-    .cartShipping,
-    .cartTotal {
-      display: flex;
-      justify-content: space-between;
+    /*A4修改*/
+    display: flex;
+    justify-content: space-between;     
 
       .text {
         font-weight: normal;
@@ -93,5 +91,5 @@
     }
   }
 
-}
+
 
