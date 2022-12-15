@@ -41,7 +41,7 @@ return (
       <h3 className={styles.cartTitle}>購物籃</h3>
       <section className={styles.productList}>{listItems} </section>
       <CartInfo name="shipping" text="運費" price="免費" />
-      <CartInfo name="total" text="小計" price="$0" />
+      <CartInfo name="total" text="小計" price="$400" />
     </section>
 
   </>
